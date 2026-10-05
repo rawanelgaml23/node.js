@@ -1,17 +1,19 @@
 {
-  "name": "ass-4",
+  "name": "ass-5",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "start:dev": "node --watch main.js"
+    "start:dev": "cross-env NODE_ENV= development node --watch src/main.js",
+    "start:prod": "cross-env NODE_ENV= production node --watch src/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
-    "express": "^5.2.1",
-    "mysql2": "^3.24.4"
+    "cross-env": "^10.1.0",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1"
   }
 }
